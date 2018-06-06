@@ -33,7 +33,7 @@ class RectFactory : public ShapeFactory {
 
 class CircFactory : public ShapeFactory {
     public:
-        shared_ptr<Shape>getShape() override {return shared_ptr<Shape>(new Circle());}
+        shared_ptr<Shape> getShape() override {return shared_ptr<Shape>(new Circle());}
 };
 
 shared_ptr<ShapeFactory> ShapeFactory::createFactory(const string s) {
